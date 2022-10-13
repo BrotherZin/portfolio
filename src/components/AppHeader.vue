@@ -5,9 +5,9 @@
         An Hyeong Jin Portfolio
       </div>
       <v-spacer></v-spacer>
-      <v-btn color="#eee" text>project 1</v-btn>
-      <v-btn color="#eee" text>project 2</v-btn>
-      <v-btn color="#eee" text>project 3</v-btn>
+      <v-btn window.location.href="profile" color="#eee" text>profile</v-btn>
+      <v-btn id="2" color="#eee" text>license</v-btn>
+      <v-btn id="3" color="#eee" text>project 3</v-btn>
     </v-layout>
   </div>
 </template>
