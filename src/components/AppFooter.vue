@@ -21,9 +21,9 @@ export default {};
   background-color: rgb(186, 218, 200);
 }
 .contact {
-  font-size: 0.7rem;
+  font-size: 0.9rem;
 }
 .h1 {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 </style>    
