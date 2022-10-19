@@ -130,7 +130,7 @@
 
               <v-card-actions>
                 <v-btn color="orange lighten-2" text href="http://www.hbm.kr/">
-                  현대사무기기 홈페이지
+                  (주)현대사무기기 홈페이지
                 </v-btn>
                 <v-btn
                   color="orange lighten-2"
