@@ -16,25 +16,16 @@
         >
           <div class="slog" data-aos="fade-up" data-aos-delay="550">
             <br />
-            『 앞날을 언제나 밝게 비춰주는 안형진입니다. 』
+
             <vue-typer
-              class="slog"
-              :text="['『 언제나 밝게 비춰주는 안형진입니다. 』', '']"
-              :repeat="Infinity"
-              :shuffle="false"
-              initial-action="typing"
-              :pre-type-delay="70"
-              :type-delay="70"
-              :pre-erase-delay="2000"
-              :erase-delay="250"
-              erase-style="select-all"
-              :erase-on-complete="false"
-              caret-animation="smooth"
+              class="typer"
+              text="『 앞날을 언제나 밝게 비춰주는 안형진입니다. 』"
+              color="red"
             ></vue-typer>
           </div>
         </v-layout>
       </swiper-slide>
-      <swiper-slide class="slide" style="background-image: url(image/top3.jpg)">
+      <!-- <swiper-slide class="slide" style="background-image: url(image/top3.jpg)">
         <v-layout fill-height align-center justify-center>
           <div class="slog">언제나 열심히</div>
         </v-layout>
@@ -43,7 +34,7 @@
         <v-layout fill-height align-center justify-center>
           <div class="slog">하겠습니다.</div>
         </v-layout>
-      </swiper-slide>
+      </swiper-slide> -->
     </swiper>
 
     <div id="profile" class="section">
@@ -55,8 +46,9 @@
           <img
             src="introduce/s1.jpg"
             class="image"
-            data-aos="fade-right"
-            data-aos-delay="550"
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
           />
           <div style="float: right">
             <p class="profilehead">Name</p>
@@ -111,6 +103,23 @@
         </v-layout>
       </div>
     </div>
+    <div>
+      <div class="section">
+        <div class="header" data-aos="fade-down" data-aos-delay="200">
+          Career
+        </div>
+        <v-layout align-center justify-center>
+          <div v-animate-onscroll="{ down: 'animated flip' }">
+            <img
+              data-aos="flip-right"
+              src="image/winter.jpg"
+              class="image"
+              @click="career"
+            />
+          </div>
+        </v-layout>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -120,9 +129,16 @@ import "swiper/swiper-bundle.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { VueTyper } from "vue-typer";
+import Vue from "vue";
+import VueAnimateOnScroll from "vue-animate-onscroll";
 
 export default {
   name: "home",
+  methods: {
+    career() {
+      this.$router.push("/careerInfo");
+    },
+  },
   data() {
     return {
       swiperOption: {
@@ -135,12 +151,14 @@ export default {
   },
   mounted() {
     AOS.init();
+    Vue.use(VueAnimateOnScroll);
     window.addEventListener("scroll", this.handleScroll);
   },
 
   components: {
     Swiper,
     SwiperSlide,
+    VueTyper,
   },
 };
 </script>
@@ -157,6 +175,10 @@ export default {
       color: rgb(242, 242, 242);
     }
   }
+}
+.typer {
+  font-weight: normal;
+  color: rgb(242, 242, 242);
 }
 
 .section {

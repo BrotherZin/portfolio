@@ -22,3 +22,13 @@ export default {
   }),
 };
 </script>
+<style lang="less">
+.typer {
+  color: white;
+  z-index: 100;
+  position: relative;
+  * {
+    color: white !important;
+  }
+}
+</style>
