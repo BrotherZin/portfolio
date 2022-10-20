@@ -5,7 +5,7 @@
         data-aos="fade-in"
         data-aos-duration="1000"
         class="slide"
-        style="background-image: url(image/mm2.jpg)"
+        style="background-image: url(/portfolio/image/mm2.jpg)"
       >
         <v-layout
           data-aos="fade-up"
@@ -50,7 +50,7 @@
       <v-layout wrap>
         <div style="float: left">
           <img
-            src="introduce/s1.jpg"
+            src="/portfolio/introduce/s1.jpg"
             class="image"
             data-aos="fade-down"
             data-aos-easing="linear"
@@ -96,7 +96,7 @@
           <div style="float: left">
             <!-- <div style="display: block; margin: auto; width: auto; height: auto"> -->
             <img
-              src="/image/license1.png"
+              src="/portfolio/image/license1.png"
               class="image"
               data-aos="fade-left"
               data-aos-delay="550"
@@ -105,7 +105,7 @@
           <div style="float: ligth">
             <!-- <div style="display: block; margin: auto; width: auto; height: auto"> -->
             <img
-              src="/image/license2.png"
+              src="/portfolio/image/license2.png"
               class="image"
               data-aos="fade-right"
               data-aos-delay="550"
@@ -122,7 +122,11 @@
         <v-layout align-center justify-center>
           <div id="career">
             <v-card class="mx-auto" max-width="auto">
-              <v-img src="image/hbm.jpg" height="auto" width="800"></v-img>
+              <v-img
+                src="/portfolio/image/hbm.jpg"
+                height="auto"
+                width="800"
+              ></v-img>
 
               <v-card-title> 현대사무기기 </v-card-title>
 
