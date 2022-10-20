@@ -96,7 +96,7 @@
           <div style="float: left">
             <!-- <div style="display: block; margin: auto; width: auto; height: auto"> -->
             <img
-              src="/portfolio/image/license1.png"
+              src="/portfolio/image/license1.PNG"
               class="image"
               data-aos="fade-left"
               data-aos-delay="550"
@@ -105,7 +105,7 @@
           <div style="float: ligth">
             <!-- <div style="display: block; margin: auto; width: auto; height: auto"> -->
             <img
-              src="/portfolio/image/license2.png"
+              src="/portfolio/image/license2.PNG"
               class="image"
               data-aos="fade-right"
               data-aos-delay="550"
