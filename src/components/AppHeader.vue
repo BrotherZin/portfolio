@@ -1,7 +1,7 @@
 <template>
   <div id="lnb" class="header">
     <v-layout align-center>
-      <div class="logo" justify-center align-center>
+      <div href="#home" class="logo" justify-center align-center>
         An Hyeong Jin Portfolio
       </div>
       <v-spacer></v-spacer>
